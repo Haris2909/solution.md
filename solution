@@ -1,0 +1,14 @@
+How will you reduce costs?
+Archive old data to Blob Storage; use Cosmos DB only for recent records.
+
+How will your solution serve archived data?
+Azure Function with fallback logic to fetch from Blob if not in Cosmos DB.
+
+How will you ensure APIs remain unchanged?
+Internal fallback logic maintains the same API contract.
+
+What tools did you use?
+Terraform, Azure Functions, Cosmos DB, Blob Storage, Data Factory.
+
+What bonus features are implemented?
+Automated archival, architecture diagram, IaC, CI/CD ready.
